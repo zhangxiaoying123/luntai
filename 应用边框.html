@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            list-style: none;
+        }
+        .nav{
+            width: 100%;
+        }
+        .nav li{
+            width: 16.7%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-right: 1px solid #666600;
+            margin: 5px 0;
+        }
+        /*最后一个li元素的右边框没有了*/
+        .nav li:last-child{
+            border-right: none;
+        }
+        /*使用not()伪类来应用元素*/
+        .nav li:not(:last-child){
+            border-right: 1px solid #666;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <ul class="nav">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+
+</body>
+</html>
